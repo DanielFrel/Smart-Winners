@@ -1,15 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0-modified | 20110126
-   License: none (public domain)
-*/
-
 html,
 body,
 div,
@@ -158,6 +146,7 @@ input[type="search"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
@@ -354,8 +343,7 @@ html input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box; /* 1 */
+	box-sizing: border-box; /* 1 */
 	padding: 0; /* 2 */
 	*height: 13px; /* 3 */
 	*width: 13px; /* 3 */
@@ -369,6 +357,7 @@ input[type="radio"] {
 
 input[type="search"] {
 	-webkit-appearance: textfield; /* 1 */
+	-moz-box-sizing: content-box;
 	-webkit-box-sizing: content-box; /* 2 */
 	box-sizing: content-box;
 }
@@ -519,14 +508,12 @@ textarea {
 }
 
 html {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-	-webkit-box-sizing: inherit;
-	        box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
@@ -544,11 +531,8 @@ body {
 }
 
 .header_wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .header {
@@ -595,8 +579,6 @@ body {
 }
 
 .welcome_name {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -681,8 +663,6 @@ body {
 }
 
 .nav-list {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	text-transform: uppercase;
 	font-family: Roboto;
@@ -742,17 +722,12 @@ body {
 	margin-bottom: 75px;
 }
 .s_3__cards {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	justify-content: space-between;
 	padding: 0;
 }
 
 .s_3__card {
-	-ms-grid-column-span: 1;
 	grid-column: span 1;
 	border: 1px solid #e0e0e0;
 	border-radius: 8px;
@@ -761,16 +736,11 @@ body {
 	margin-bottom: 17px;
 }
 .flex {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-flex: 1;
-	    -ms-flex: auto;
-	        flex: auto;
+	flex: auto;
 }
 .flex-wrap {
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .s_3__card-pic {
@@ -859,9 +829,7 @@ body {
 }
 
 .justify-content_s_b {
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	justify-content: space-between;
 }
 
 .s_4_balance {
@@ -935,14 +903,9 @@ body {
 }
 
 .s_5_cards {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	position: relative;
 }
 .s_5_more_and_all {
@@ -1023,21 +986,15 @@ body {
 }
 
 .s_6_cards {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 1fr 15px 1fr 15px 1fr;
 	grid-template-columns: repeat(3, 1fr);
-	-webkit-column-gap: 15px;
-	   -moz-column-gap: 15px;
-	        column-gap: 15px;
+	column-gap: 15px;
 }
 
 .s_6_card_l {
-	-ms-grid-column-span: 2;
 	grid-column: span 2;
 }
 .s_6_card_r {
-	-ms-grid-column-span: 1;
 	grid-column: span 1;
 }
 
@@ -1049,9 +1006,7 @@ body {
 
 .won_title {
 	margin: 25px 0;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	justify-content: center;
 }
 
 .won_icon {
@@ -1077,29 +1032,23 @@ body {
 }
 
 .won_img_and_card {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr)[7];
 	grid-template-columns: repeat(7, 1fr);
 	margin-left: 15px;
 }
 
 .won_img {
-	-ms-grid-column-span: 4;
 	grid-column: span 4;
 	max-width: 413px;
 }
 
 .won_card {
-	-ms-grid-column-span: 3;
 	grid-column: span 3;
 }
 
 .result_days {
 	margin-top: 19px;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	justify-content: center;
 }
 
 .result_days > h3 {
@@ -1131,8 +1080,7 @@ body {
 	margin-bottom: 15px;
 }
 .won_card > p {
-	-moz-text-align-last: left;
-	     text-align-last: left;
+	text-align-last: left;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
@@ -1145,8 +1093,7 @@ body {
 	font-size: 14px;
 	line-height: 120%;
 	margin: 0 auto;
-	-webkit-text-decoration-line: underline;
-	        text-decoration-line: underline;
+	text-decoration-line: underline;
 	color: #0061a3;
 	display: block;
 	text-align: center;
@@ -1231,7 +1178,6 @@ body {
 }
 
 .frequently {
-	-ms-grid-column-span: 2;
 	grid-column: span 2;
 	font-weight: 500;
 	font-size: 24px;
@@ -1262,21 +1208,6 @@ body {
 	background-position: 0 0;
 	background-size: 100%;
 
-	background: -webkit-gradient(
-			linear,
-			left top, left bottom,
-			color-stop(33.74%, rgba(255, 253, 253, 0)),
-			to(rgba(255, 255, 255, 0.99))
-		),
-		url(../img/bg_button-min.png);
-
-	background: -o-linear-gradient(
-			top,
-			rgba(255, 253, 253, 0) 33.74%,
-			rgba(255, 255, 255, 0.99) 100%
-		),
-		url(../img/bg_button-min.png);
-
 	background: linear-gradient(
 			180deg,
 			rgba(255, 253, 253, 0) 33.74%,
@@ -1291,15 +1222,12 @@ body {
 }
 
 .button {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr)[30];
 	grid-template-columns: repeat(30, 1fr);
 	padding: 136px 124px 55px 108px;
 }
 
 .wh_bt {
-	-ms-grid-column-span: 9;
 	grid-column: span 9;
 }
 
@@ -1318,12 +1246,10 @@ body {
 	color: #5f5f5f;
 }
 .empty {
-	-ms-grid-column-span: 8;
 	grid-column: span 8;
 }
 
 .fb_tw {
-	-ms-grid-column-span: 13;
 	grid-column: span 13;
 	margin-left: auto;
 }
@@ -1334,7 +1260,6 @@ body {
 
 .useful_links {
 	margin-top: 39px;
-	-ms-grid-column-span: 9;
 	grid-column: span 9;
 }
 
@@ -1362,7 +1287,6 @@ body {
 	font-weight: 700;
 }
 .smartwinners {
-	-ms-grid-column-span: 8;
 	grid-column: span 8;
 	margin-left: 35%;
 	width: 100%;
@@ -1389,11 +1313,7 @@ body {
 }
 
 .payment_methods {
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-ms-grid-column-span: 13;
+	flex-direction: column;
 	grid-column: span 13;
 	margin-left: 193px;
 	margin-top: 39px;
@@ -1407,26 +1327,16 @@ body {
 	margin-bottom: 10px;
 }
 .payment_methods_icon{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .payment_methods_icon>li{
 	margin-bottom:  10px;
 }
 .payment_methods > ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	flex-direction: row;
 	margin-bottom: 30px;
 }
 
@@ -1468,14 +1378,9 @@ body {
 	}
 	.iPhone_bang {
 		z-index: 10;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-ms-flex-wrap: nowrap;
-		    flex-wrap: nowrap;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		flex-wrap: nowrap;
+		justify-content: space-between;
 		position: fixed;
 		height: 30px;
 	}
@@ -1547,12 +1452,8 @@ body {
 	}
 
 	.burger_logo_avatar-mobile {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		justify-content: space-between;
 		padding-top: 46px;
 	}
 	.burger_logo_avatar-mobile > .logo-mobile > img {
@@ -1668,22 +1569,16 @@ body {
 		font-size: 16px;
 	}
 	.s_6_cards {
-		display: -ms-grid;
 		display: grid;
-		-ms-grid-columns: 1fr 15px 1fr 15px 1fr;
 		grid-template-columns: repeat(3, 1fr);
-		-webkit-column-gap: 15px;
-		   -moz-column-gap: 15px;
-		        column-gap: 15px;
+		column-gap: 15px;
 	}
 	
 	.s_6_card_l {
-		-ms-grid-column-span: 3;
 		grid-column: span 3;
 		margin-bottom: 32px;
 	}
 	.s_6_card_r {
-		-ms-grid-column-span: 3;
 		grid-column: span 3;
 	}
 
@@ -1713,7 +1608,6 @@ body {
 	}
 	
 	.won_img {
-		-ms-grid-column-span: 7;
 		grid-column: span 7;
 	}
 	.won_img> img{
@@ -1721,16 +1615,13 @@ body {
 	}
 	
 	.won_card {
-		-ms-grid-column-span: 7;
 		grid-column: span 7;
 	}
 	
 	.result_days {
 		margin-top: 18px;
 		margin-bottom: 16px;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		justify-content: center;
 	}
 	
 	.result_days > h3 {
@@ -1798,7 +1689,6 @@ body {
 	}
 	
 	.wh_bt {
-		-ms-grid-column-span: 30;
 		grid-column: span 30;
 	}
 	.wh_title {
@@ -1809,7 +1699,6 @@ body {
 		line-height: 14.4px;
 	}
 	.empty {
-		-ms-grid-column-span: 0;
 		grid-column: span 0;
 	}
 	
@@ -1818,7 +1707,6 @@ body {
 	}
 	
 	.useful_links {
-		-ms-grid-column-span: 30;
 		grid-column: span 30;
 	}
 	
@@ -1833,17 +1721,12 @@ body {
 	}
 
 	.smartwinners {
-		-ms-grid-column-span: 30;
 		grid-column: span 30;
 		margin: 0 auto;
 	}
 	
 	.payment_methods {
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-ms-grid-column-span: 30;
+		flex-direction: row;
 		grid-column: span 30;
 		margin-left: 0;
 		margin-top: 39px;
@@ -1857,19 +1740,14 @@ body {
 	}
 	
 	.payment_methods >div> ul {
-		display: -ms-grid;
 		display: grid;
-		-ms-grid-columns: 1fr 10px 1fr 10px 1fr;
 		grid-template-columns: repeat(3, 1fr);
-		-webkit-column-gap: 10px;
-		   -moz-column-gap: 10px;
-		        column-gap: 10px;
+		column-gap: 10px;
 		row-gap: 10px;
 		margin-bottom: 30px;
 	}
 	
 	.payment_methods >div> ul > li {
-		-ms-grid-column-span: 1;
 		grid-column: span 1;
 	}
 
